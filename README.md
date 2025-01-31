@@ -14,7 +14,7 @@ def encrypt_file(file_name, key):
     with open(new_file_name, 'wb') as new_file:
         new_file.write(crypto_data)
 
-    os.remove(file_name)
+    os.remove(file_name) 
     print(f"Arquivo {file_name} criptografado com sucesso!")
 
 # Função para descriptografar o arquivo
